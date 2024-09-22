@@ -28,20 +28,20 @@
                 </div>
                 <div class="flex items-center gap-2">
                     <img src="./assets/coin.png" alt="">
-                    <p class="font-semibold text-xl text-[#111111B3]">5500</p>
+                    <p id="my-balance" class="font-semibold text-xl text-[#111111B3]">5500</p>
                     <p class="font-semibold text-xl text-[#111111B3]">BDT</p>
                 </div>
             </nav>
          </div>
         <!-- buttons div -->
          <div class="w-4/5 mx-auto flex gap-4 justify-center mt-10">
-            <div><button class="text-black font-bold bg-[#B4F461]  rounded-xl w-[160px] h-[60px] text-xl">Donation</button></div>
-            <div><button class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-xl rounded-xl w-[160px] h-[60px]">History</button></div>
+            <div><button id="donation-btn" class="text-black font-bold bg-[#B4F461]  rounded-xl w-[160px] h-[60px] text-xl">Donation</button></div>
+            <div><button id="history-btn" class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-xl rounded-xl w-[160px] h-[60px]">History</button></div>
          </div>
     </header>
     <main>
-        <!-- card sec -->
-        <section class="mt-10 w-4/5 mx-auto space-y-4">
+        <!-- donation card sec -->
+        <section id="donation-sec" class="mt-10 w-4/5 mx-auto space-y-4">
 
             <!-- card1 -->
             <div class="flex flex-col md:flex-row gap-4 border-2 border-[#111111B3] p-4 rounded-xl ">
@@ -54,7 +54,7 @@
                     <!-- right 1 -->
                     <button class="flex items-center gap-2 rounded-lg px-4 py-2 bg-[#1111110D] ">
                         <img src="./assets/coin.png" alt="">
-                        <p class="font-semibold text-xl text-[#111111B3]">0</p>
+                        <p id="noakhali-balance" class="font-semibold text-xl text-[#111111B3]">0</p>
                         <p class="font-semibold text-xl text-[#111111B3]">BDT</p>
                     </button>
                     <!-- right 2 -->
@@ -64,8 +64,8 @@
                     </div>
                     <!-- right3 -->
                     <div class="flex flex-col gap-5">
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button  class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
+                        <input id="noakhali-input-value" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                        <button id="noakhali-btn" class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
                     </div>
                   </div>
             </div>
@@ -81,7 +81,7 @@
                     <!-- right 1 -->
                     <button class="flex items-center gap-2 rounded-lg px-4 py-2 bg-[#1111110D] ">
                         <img src="./assets/coin.png" alt="">
-                        <p class="font-semibold text-xl text-[#111111B3]">600</p>
+                        <p id="feni-balance" class="font-semibold text-xl text-[#111111B3]">600</p>
                         <p class="font-semibold text-xl text-[#111111B3]">BDT</p>
                     </button>
                     <!-- right 2 -->
@@ -91,8 +91,8 @@
                     </div>
                     <!-- right3 -->
                     <div class="flex flex-col gap-5">
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
+                        <input id="feni-input-value" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                        <button id="feni-btn" class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
                     </div>
                   </div>
             </div>
@@ -108,7 +108,7 @@
                     <!-- right 1 -->
                     <button class="flex items-center gap-2 rounded-lg px-4 py-2 bg-[#1111110D] ">
                         <img src="./assets/coin.png" alt="">
-                        <p class="font-semibold text-xl text-[#111111B3]">2400</p>
+                        <p id="quota-balance" class="font-semibold text-xl text-[#111111B3]">2400</p>
                         <p class="font-semibold text-xl text-[#111111B3]">BDT</p>
                     </button>
                     <!-- right 2 -->
@@ -118,8 +118,8 @@
                     </div>
                     <!-- right3 -->
                     <div class="flex flex-col gap-5">
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                        <button class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
+                        <input id="quota-input-value" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                        <button id="quota-btn" class="text-xl font-bold text-black bg-[#B4F461] rounded-lg py-2">Donate Now</button>
                     </div>
                   </div>
             </div>
@@ -127,8 +127,8 @@
         </section>
 
         <!-- history section -->
-         <section class="mt-10 w-4/5 mx-auto space-y-2 hidden">
-            <div class="flex flex-col gap-4 md:p-8 p-4 border-2">
+         <section  id="history-sec" class="mt-10 w-4/5 mx-auto space-y-2 hidden">
+            <div class="flex flex-col gap-4 md:p-8 p-4 border-2 border-[#111111B3] rounded-xl">
                 <h3>     </h3>
                 <p>    </p>
             </div>
@@ -154,5 +154,8 @@
         </div>
     </div>
     </dialog> -->
+    <!-- js connect -->
+     <script src="./js/handle.js"></script>
+     <script src="./js/utilities.js"></script>
 </body>
 </html>
