@@ -1,3 +1,9 @@
 .font-lexend{
     font-family: "Lexend", sans-serif;
 }
+
+.btn-container{
+
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.438);
+}
