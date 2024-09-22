@@ -12,6 +12,7 @@ function calculate(inputAmount,myBalance,locationBalance,id){
     }else if(myBalance < inputAmount){
         alert("You don't have enough balance!")
     }else{
+        my_modal.showModal()
         document.getElementById(id).innerText = (locationBalance + inputAmount).toFixed(2);
         document.getElementById('my-balance').innerText = (myBalance - inputAmount).toFixed(2);
     }
