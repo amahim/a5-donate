@@ -21,25 +21,25 @@
         <!-- nav div -->
          <div class="bg-[#F9F7F3]">
             <nav class="w-4/5 flex md:flex-row flex-col items-center mx-auto md:justify-between py-4">
-                <div><a href="blog.html" class="px-4 py-2 text-xl rounded-xl font-bold bg-[#B4F461] text-black border-none">Blog</a></div>
+                <div><a href="blog.html" class="md:px-4 md:py-2 px-2 py-1 md:text-xl rounded-xl font-bold bg-[#B4F461] text-black border-none">Blog</a></div>
                 <div class="flex gap-4 items-center">
-                    <img src="./assets/logo.png" alt="">
-                    <h3 class="text-xl font-bold text-black">DONATE BANGLADESH</h3>
+                    <img src="./assets/logo.png" alt="" class="w-8 h-8 md:w-12 md:h-12">
+                    <h3 class="md:text-xl font-bold text-black">DONATE BANGLADESH</h3>
                 </div>
                 <div class="flex items-center gap-2">
-                    <img src="./assets/coin.png" alt="">
-                    <p id="my-balance" class="font-semibold text-xl text-[#111111B3]">5500</p>
-                    <p class="font-semibold text-xl text-[#111111B3]">BDT</p>
+                    <img src="./assets/coin.png" alt="" class="w-5 h-5 md:w-8 md:h-8">
+                    <p id="my-balance" class="font-semibold md:text-xl text-[#111111B3]">5500</p>
+                    <p class="font-semibold md:text-xl text-[#111111B3]">BDT</p>
                 </div>
             </nav>
          </div>
         <!-- buttons div -->
-         <div class="btn-container  mx-auto flex gap-4 justify-center py-10">
-            <div><button id="donation-btn" class="text-black font-bold bg-[#B4F461]  rounded-xl w-[160px] h-[60px] text-xl">Donation</button></div>
-            <div><button id="history-btn" class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-xl rounded-xl w-[160px] h-[60px]">History</button></div>
+         <div class="btn-container  mx-auto flex gap-4 justify-center py-5 border-b-2 border-[#11111128]">
+            <div><button id="donation-btn" class="text-black font-bold bg-[#B4F461]  rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]  text-base md:text-xl">Donation</button></div>
+            <div><button id="history-btn" class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-base md:text-xl rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]">History</button></div>
          </div>
     </header>
-    <main>
+    <main class="mt-5 mb-10">
         <!-- donation card sec -->
         <section id="donation-sec" class=" w-4/5 mx-auto space-y-4">
 
@@ -59,7 +59,7 @@
                     </button>
                     <!-- right 2 -->
                     <div class="space-y-2">
-                        <h3 class="md:text-xl font-extrabold text-black">Donate for Flood at Noakhali, Bangladesh</h3>
+                        <h3 id="noakhali-title" class="md:text-xl font-extrabold text-black">Donate for Flood at Noakhali, Bangladesh</h3>
                         <p class="md:text-[16px] text-[12px]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     </div>
                     <!-- right3 -->
@@ -86,7 +86,7 @@
                     </button>
                     <!-- right 2 -->
                     <div class="space-y-2">
-                        <h3 class="md:text-xl font-extrabold text-black">Donate for Flood Relief in Feni,Bangladesh</h3>
+                        <h3 id="feni-title" class="md:text-xl font-extrabold text-black">Donate for Flood Relief in Feni,Bangladesh</h3>
                         <p class="md:text-[16px] text-[12px]">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     </div>
                     <!-- right3 -->
@@ -113,7 +113,7 @@
                     </button>
                     <!-- right 2 -->
                     <div class="space-y-2">
-                        <h3 class="md:text-xl font-extrabold text-black">Aid for Injured in the Quota Movement</h3>
+                        <h3 id="quota-title" class="md:text-xl font-extrabold text-black">Aid for Injured in the Quota Movement</h3>
                         <p class="md:text-[16px] text-[12px]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     </div>
                     <!-- right3 -->
@@ -127,16 +127,12 @@
         </section>
 
         <!-- history section -->
-         <section  id="history-sec" class="mt-10 w-4/5 mx-auto space-y-2 hidden">
-            <div class="flex flex-col gap-4 md:p-8 p-4 border-2 border-[#111111B3] rounded-xl">
-                <h3>     </h3>
-                <p>    </p>
+         <section  id="history-sec" class="mt-10 w-4/5 mx-auto  hidden">
+            <div id="history-div" class="flex flex-col gap-4">
+                
             </div>
          </section>
     </main>
-    <footer class="h-[50px] bg-[#f9f7f3] mt-5">
-
-    </footer>
 
     <!-- modal -->
     <dialog id="my_modal" class="modal">

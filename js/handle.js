@@ -43,27 +43,34 @@ noakhaliBtn.addEventListener('click',function(){
     const myBalance = getBalance('my-balance')
     const inputAmount = getInputValue('noakhali-input-value');
     const noakhaliBalance = getBalance('noakhali-balance')
+    const noakhaliTitle = document.getElementById('noakhali-title').innerText;
 
-    calculate(inputAmount,myBalance,noakhaliBalance,'noakhali-balance');
+    calculate(inputAmount,myBalance,noakhaliBalance,'noakhali-balance',noakhaliTitle);
 
 })
+
+
 // feni
 feniBtn.addEventListener('click',function(){
     
     const myBalance = getBalance('my-balance')
     const inputAmount = getInputValue('feni-input-value');
     const feniBalance = getBalance('feni-balance')
+    const feniTitle = document.getElementById('feni-title').innerText;
 
-    calculate(inputAmount,myBalance,feniBalance,'feni-balance');
+    calculate(inputAmount,myBalance,feniBalance,'feni-balance',feniTitle);
 
 })
+
+
 // quota
 quotaBtn.addEventListener('click',function(){
     
     const myBalance = getBalance('my-balance')
     const inputAmount = getInputValue('quota-input-value');
     const quotaBalance = getBalance('quota-balance')
+    const quotaTitle = document.getElementById('quota-title').innerText;
 
-    calculate(inputAmount,myBalance,quotaBalance,'quota-balance');
+    calculate(inputAmount,myBalance,quotaBalance,'quota-balance',quotaTitle);
 
 })
