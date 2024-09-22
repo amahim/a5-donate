@@ -8,7 +8,7 @@ function getBalance(id){
 
 
 function calculate(inputAmount,myBalance,locationBalance,id,locationTitle){
-    if(inputAmount < 0 || isNaN(inputAmount)){
+    if(inputAmount < 1 || isNaN(inputAmount)){
         alert('Invalid Donation Amount!')
     }else if(myBalance < inputAmount){
         
